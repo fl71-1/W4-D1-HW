@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(115, 115, 115);
+}
+#container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+#container img {
+    width: 50vh; 
+    margin: 10px; 
+    border-radius: 10px; 
+    transition: transform 0.20s; 
+}
+
+#container img:hover {
+    transform: scale(1.05); 
+}
+@media only screen and (max-width: 992px) {
+    #container img {
+        width: 80%; 
+    }
+}
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+    #container img {
+        width: 40%; 
+    }
+}
